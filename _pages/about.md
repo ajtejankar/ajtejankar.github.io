@@ -2,24 +2,20 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: PhD student (Computer Science) at UC Davis.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: my-website-pic.jpg
   image_cicular: false # crops the image to make it circular
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a 2nd year PhD student at the wonderful [University of California, Davis](https://www.ucdavis.edu). My advisor is [Dr. Hamed Pirsiavash](https://web.cs.ucdavis.edu/~hpirsiav/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+__Research__: I primarily work on self-supervised learning for images. I have primarily worked on improving the quality of features learnt by self-supervised models. This has involved using knowledge distillation for improving smaller models and improving the loss functions for better semantic level grouping. Recently, I have become interested in analyzing the failure modes of these methods. Specifically, how changing the input dataset affects the final model? This change is in part spurred by the realization that as machine learning models get bigger and more complex they start resembling human brains in terms of complexity. Simple theoretical models don't work anymore so we have become model-biologists to understand them.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+__Previously__: I obtained my MS in Computer Science from [UMBC](https://umbc.edu). I have interned at [Meta AI](https://ai.facebook.com) and [Matroid](https://www.matroid.com) in the past.
