@@ -10,6 +10,8 @@
     year      = {2022},
     abstract  = {We are interested in representation learning in self-supervised, supervised, and semi-supervised settings. Some recent self-supervised learning methods like mean-shift (MSF) cluster images by pulling the embedding of a query image to be closer to its nearest neighbors (NNs). Since most NNs are close to the query by design, the averaging may not affect the embedding of the query much. On the other hand, far away NNs may not be semantically related to the query. We generalize the mean-shift idea by constraining the search space of NNs using another source of knowledge so that NNs are far from the query while still being semantically related. We show that our method (1) outperforms MSF in SSL setting when the constraint utilizes a different augmentation of an image from the previous epoch, and (2) outperforms PAWS in semi-supervised setting with less training resources when the constraint ensures that the NNs have the same pseudo-label as the query.},
     selected  = {true},
+    pdf       = {https://arxiv.org/pdf/2112.04607.pdf},
+    code      = {https://github.com/UCDvision/CMSF},
 }
 
 @InProceedings{backdoor,
@@ -29,13 +31,13 @@
 }
 
 @article{bow,
-    title   = {A fistful of words: Learning transferable visual models from bag-of-words supervision},
+    title   = {Can we train vision and language zero-shot classification models without syntax?},
     author  = {Ajinkya Tejankar and Bichen Wu and Saining Xie and Madian Khabsa and Hamed Pirsiavash and Hamed Firooz},
-    journal = {arXiv preprint arXiv:2112.13884},
-    year    = {2021},
-    abstract= {Using natural language as a supervision for training visual recognition models holds great promise. Recent works have shown that if such supervision is used in the form of alignment between images and captions in large training datasets, then the resulting aligned models perform well on zero-shot classification as downstream tasks2. In this paper, we focus on teasing out what parts of the language supervision are essential for training zero-shot image classification models. Through extensive and careful experiments, we show that: 1) A simple Bag-of-Words (BoW) caption could be used as a replacement for most of the image captions in the dataset. Surprisingly, we observe that this approach improves the zero-shot classification performance when combined with word balancing. 2) Using a BoW pretrained model, we can obtain more training data by generating pseudo-BoW captions on images that do not have a caption. Models trained on images with real and pseudo-BoW captions achieve stronger zero-shot performance. On ImageNet-1k zero-shot evaluation, our best model, that uses only 3M image-caption pairs, performs on-par with a CLIP model trained on 15M image-caption pairs (31.5% vs 31.3%).},
+    journal = {NeurIPS SSL Theory and Practice Workshop},
+    year    = {2022},
+    abstract= {Natural language supervision in the form of image captions was recently shown to be an effective way of training zero-shot image classification models. In this work, we focus on teasing out what parts of the language supervision are essential for training zero-shot models. Through extensive and careful experiments, we show that replacing intact captions with Bag-of-Words (BoW) does not significantly degrade the zero-shot performance. Surprisingly, we can even slightly improve the performance on some datasets by balancing the frequency of words in BoW.},
     selected= {true},
-    pdf     = {https://arxiv.org/pdf/2112.13884.pdf},
+    pdf     = {assets/pdf/bow-neurips-workshop-2022.pdf},
 }
 
 @InProceedings{simreg,
